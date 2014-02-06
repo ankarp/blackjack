@@ -307,6 +307,8 @@
 		39C3349718A4216C00A66B3A /* Blackjack */ = {
 			isa = PBXGroup;
 			children = (
+				39C3359218A44C6300A66B3A /* BJDcard.m */,
+				39C3359118A44C6300A66B3A /* BJDcard.h */,
 				39C3359518A4540B00A66B3A /* BJDGameModel.m */,
 				39C3359418A453FE00A66B3A /* BJDGameModel.h */,
 				39C334A018A4216C00A66B3A /* BJAppDelegate.h */,
@@ -316,8 +318,6 @@
 				39C334AC18A4216C00A66B3A /* BJViewController.h */,
 				39C334AD18A4216C00A66B3A /* BJViewController.m */,
 				39C3349818A4216C00A66B3A /* Supporting Files */,
-				39C3359118A44C6300A66B3A /* BJDcard.h */,
-				39C3359218A44C6300A66B3A /* BJDcard.m */,
 			);
 			path = Blackjack;
 			sourceTree = "<group>";
@@ -764,6 +764,7 @@
 				39C334B318A4216C00A66B3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

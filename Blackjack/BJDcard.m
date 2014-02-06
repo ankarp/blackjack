@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Anatoly Karp. All rights reserved.
 //
 
-#import "BJDcard.h"
+#import "BJDCard.h"
 
-@implementation BJDcard
+@implementation BJDCard
 
 - (BOOL) isAnAce
 {

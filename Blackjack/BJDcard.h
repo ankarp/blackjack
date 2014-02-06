@@ -16,7 +16,7 @@ typedef enum : int
     BJcardSuitHeart
 } BJCardSuit;
 
-@interface BJDcard : NSObject
+@interface BJDCard : NSObject
 
 @property (nonatomic) BJCardSuit suit;
 @property (nonatomic) int digit;
