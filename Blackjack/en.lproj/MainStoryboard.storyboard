@@ -67,36 +67,51 @@
                             <constraint firstItem="KkS-4E-4GC" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="11" id="0MU-iP-BtC"/>
                             <constraint firstItem="ngS-qI-FGZ" firstAttribute="top" secondItem="KkS-4E-4GC" secondAttribute="top" type="default" id="1N9-4h-Arj"/>
                             <constraint firstAttribute="bottom" secondItem="8xV-rw-jjF" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="5Oa-wR-Rkw"/>
+                            <constraint firstAttribute="trailing" secondItem="Bp5-0W-13U" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Ddj-9w-s72"/>
+                            <constraint firstAttribute="trailing" secondItem="TgJ-cl-oew" secondAttribute="trailing" constant="14" id="G2M-5W-HCH"/>
                             <constraint firstItem="958-Qe-oNK" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="GF9-tj-rjy"/>
                             <constraint firstItem="z48-ZN-Z6z" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="144" id="I5q-x8-IkP"/>
+                            <constraint firstItem="TgJ-cl-oew" firstAttribute="leading" secondItem="hSH-gN-s8k" secondAttribute="leading" type="default" id="IoL-wv-CNr"/>
                             <constraint firstItem="fB8-2Y-bhw" firstAttribute="leading" secondItem="z48-ZN-Z6z" secondAttribute="leading" type="default" id="JxE-oB-AJK"/>
                             <constraint firstItem="DQR-Ze-S7C" firstAttribute="top" secondItem="3" secondAttribute="top" constant="272" id="Jz4-bE-sA3"/>
                             <constraint firstItem="958-Qe-oNK" firstAttribute="top" secondItem="3" secondAttribute="top" constant="9" id="Ksb-GS-Uaz"/>
-                            <constraint firstItem="Bp5-0W-13U" firstAttribute="leading" secondItem="TgJ-cl-oew" secondAttribute="leading" type="default" id="Kty-w3-P7O"/>
                             <constraint firstItem="63u-fD-fem" firstAttribute="top" secondItem="3" secondAttribute="top" constant="235" id="LCx-np-twr"/>
                             <constraint firstItem="fB8-2Y-bhw" firstAttribute="top" secondItem="033-CG-3h0" secondAttribute="top" type="default" id="O9c-Nh-02r"/>
                             <constraint firstItem="033-CG-3h0" firstAttribute="leading" secondItem="jpA-Pp-3GL" secondAttribute="leading" type="default" id="SDO-jl-p8H"/>
                             <constraint firstItem="apj-pA-Qdy" firstAttribute="leading" secondItem="ngS-qI-FGZ" secondAttribute="leading" type="default" id="SYo-P9-4LN"/>
                             <constraint firstAttribute="bottom" secondItem="hSH-gN-s8k" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="UEA-P6-2li"/>
                             <constraint firstItem="DQR-Ze-S7C" firstAttribute="leading" secondItem="KkS-4E-4GC" secondAttribute="leading" type="default" id="Uti-85-sG5"/>
+                            <constraint firstItem="Bp5-0W-13U" firstAttribute="leading" secondItem="apj-pA-Qdy" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="V0E-jJ-V9i"/>
                             <constraint firstItem="63u-fD-fem" firstAttribute="leading" secondItem="958-Qe-oNK" secondAttribute="leading" type="default" id="WLI-ou-qGv"/>
                             <constraint firstItem="KkS-4E-4GC" firstAttribute="top" secondItem="3" secondAttribute="top" constant="39" id="dnj-zf-bFH"/>
                             <constraint firstItem="z48-ZN-Z6z" firstAttribute="top" secondItem="jpA-Pp-3GL" secondAttribute="top" type="default" id="fcp-Ep-oDM"/>
                             <constraint firstItem="jpA-Pp-3GL" firstAttribute="top" secondItem="ngS-qI-FGZ" secondAttribute="top" type="default" id="gF6-LV-qw4"/>
-                            <constraint firstItem="ngS-qI-FGZ" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="56" id="hPB-RF-VgD"/>
                             <constraint firstItem="8xV-rw-jjF" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="40" id="iCg-CJ-RIw"/>
                             <constraint firstItem="TgJ-cl-oew" firstAttribute="top" secondItem="z48-ZN-Z6z" secondAttribute="top" type="default" id="iai-wB-RqN"/>
                             <constraint firstItem="033-CG-3h0" firstAttribute="top" secondItem="apj-pA-Qdy" secondAttribute="top" type="default" id="kNh-LJ-6um"/>
                             <constraint firstItem="Bp5-0W-13U" firstAttribute="top" secondItem="fB8-2Y-bhw" secondAttribute="top" type="default" id="qjH-k9-EV1"/>
                             <constraint firstItem="apj-pA-Qdy" firstAttribute="top" secondItem="DQR-Ze-S7C" secondAttribute="top" type="default" id="sSu-zx-W9h"/>
-                            <constraint firstAttribute="trailing" secondItem="hSH-gN-s8k" secondAttribute="trailing" constant="33" id="vRV-s3-xpR"/>
                             <constraint firstItem="jpA-Pp-3GL" firstAttribute="centerX" secondItem="958-Qe-oNK" secondAttribute="centerX" type="default" id="zNB-I2-bfu"/>
-                            <constraint firstItem="TgJ-cl-oew" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="218" id="zlo-QF-tDG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dealerCard1" destination="3" id="PAG-Yq-qp0"/>
+                        <outlet property="dealerCard2" destination="ngS-qI-FGZ" id="67W-2K-2zN"/>
+                        <outlet property="dealerCard3" destination="jpA-Pp-3GL" id="SLp-pa-70x"/>
+                        <outlet property="dealerCard4" destination="z48-ZN-Z6z" id="awz-6P-eJ0"/>
+                        <outlet property="dealerCard5" destination="TgJ-cl-oew" id="tw4-Cb-7w6"/>
+                        <outlet property="hitButton" destination="hSH-gN-s8k" id="bok-lj-NQ9"/>
+                        <outlet property="playerCard1" destination="DQR-Ze-S7C" id="Xra-YE-y41"/>
+                        <outlet property="playerCard2" destination="apj-pA-Qdy" id="e3r-eE-vUn"/>
+                        <outlet property="playerCard3" destination="033-CG-3h0" id="5xq-Tv-zRV"/>
+                        <outlet property="playerCard4" destination="fB8-2Y-bhw" id="vFt-eV-sYU"/>
+                        <outlet property="playerCard5" destination="Bp5-0W-13U" id="yvU-o5-Lj0"/>
+                        <outlet property="standButton" destination="8xV-rw-jjF" id="YLU-Ww-rz8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="35" y="21"/>
         </scene>
     </scenes>
     <resources>
@@ -105,6 +120,20 @@
     <classes>
         <class className="BJViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/BJViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="dealerCard1" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="dealerCard2" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="dealerCard3" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="dealerCard4" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="dealerCard5" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="hitButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="playerCard1" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="playerCard2" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="playerCard3" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="playerCard4" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="playerCard5" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="standButton" candidateClass="UIButton"/>
+            </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
