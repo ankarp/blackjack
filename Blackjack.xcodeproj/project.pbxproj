@@ -127,6 +127,7 @@
 		39C3358E18A4369000A66B3A /* spade-8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C3352118A4369000A66B3A /* spade-8@2x.png */; };
 		39C3358F18A4369000A66B3A /* spade-9.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C3352218A4369000A66B3A /* spade-9.png */; };
 		39C3359018A4369000A66B3A /* spade-9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C3352318A4369000A66B3A /* spade-9@2x.png */; };
+		39C3359318A44C6300A66B3A /* BJDcard.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C3359218A44C6300A66B3A /* BJDcard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -255,6 +256,8 @@
 		39C3352118A4369000A66B3A /* spade-8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spade-8@2x.png"; sourceTree = "<group>"; };
 		39C3352218A4369000A66B3A /* spade-9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spade-9.png"; sourceTree = "<group>"; };
 		39C3352318A4369000A66B3A /* spade-9@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spade-9@2x.png"; sourceTree = "<group>"; };
+		39C3359118A44C6300A66B3A /* BJDcard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJDcard.h; sourceTree = "<group>"; };
+		39C3359218A44C6300A66B3A /* BJDcard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJDcard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,6 +311,8 @@
 				39C334AC18A4216C00A66B3A /* BJViewController.h */,
 				39C334AD18A4216C00A66B3A /* BJViewController.m */,
 				39C3349818A4216C00A66B3A /* Supporting Files */,
+				39C3359118A44C6300A66B3A /* BJDcard.h */,
+				39C3359218A44C6300A66B3A /* BJDcard.m */,
 			);
 			path = Blackjack;
 			sourceTree = "<group>";
@@ -637,6 +642,7 @@
 				39C3349E18A4216C00A66B3A /* main.m in Sources */,
 				39C334A218A4216C00A66B3A /* BJAppDelegate.m in Sources */,
 				39C334AE18A4216C00A66B3A /* BJViewController.m in Sources */,
+				39C3359318A44C6300A66B3A /* BJDcard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
