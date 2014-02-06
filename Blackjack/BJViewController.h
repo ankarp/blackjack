@@ -25,4 +25,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *standButton;
 @property (weak, nonatomic) IBOutlet UIButton *hitButton;
 
+
+- (IBAction)didTapStandButton:(id)sender;
+- (IBAction)didTapHitButton:(id)sender;
+
 @end

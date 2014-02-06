@@ -26,4 +26,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)didTapStandButton:(id)sender {
+}
+
+- (IBAction)didTapHitButton:(id)sender {
+}
 @end
