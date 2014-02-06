@@ -14,6 +14,21 @@
 
 @implementation BJViewController
 
+@synthesize dealerCard1;
+@synthesize dealerCard2;
+@synthesize dealerCard3;
+@synthesize dealerCard4;
+@synthesize dealerCard5;
+
+@synthesize playerCard1;
+@synthesize playerCard2;
+@synthesize playerCard3;
+@synthesize playerCard4;
+@synthesize playerCard5;
+
+@synthesize hitButton;
+@synthesize standButton;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
