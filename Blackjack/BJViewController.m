@@ -10,6 +10,9 @@
 
 @interface BJViewController ()
 
+@property (nonatomic, strong) NSArray* dealerCardViews;
+@property (nonatomic, strong) NSArray* playerCardViews;
+
 @end
 
 @implementation BJViewController
@@ -33,6 +36,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.dealerCardViews = @[self.dealerCard1, self.dealerCard2, self.dealerCard3, self.dealerCard4, self.dealerCard5];
+    self.playerCardViews = @[self.playerCard1, self.playerCard2, self.playerCard3, self.playerCard4, self.playerCard5];
+}
+
+- (void) viewDidUnload
+{
+    [super viewDidUnload];
+    self.dealerCardViews = nil;
+    self.playerCardViews = nil;
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,4 +58,10 @@
 
 - (IBAction)didTapHitButton:(id)sender {
 }
+
+- (NSInteger) supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait;
+}
+
 @end
