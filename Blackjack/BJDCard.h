@@ -26,4 +26,6 @@ typedef enum : int
 - (BOOL) isAFaceOrTenCard;
 - (UIImage *) getCardImage;
 
++(NSMutableArray *) generateAPackOfCards;
+
 @end

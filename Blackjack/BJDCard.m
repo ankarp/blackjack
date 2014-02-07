@@ -46,4 +46,21 @@
     return [UIImage imageNamed:filename];
 }
 
++(NSMutableArray *) generateAPackOfCards
+{
+    NSMutableArray *arr = [NSMutableArray array];
+
+    BJDCard *card;
+    int suit, digit;
+
+    for (suit = 0; suit < 4; suit++) {
+        card = [[BJDCard alloc] init];
+        card.suit = suit;
+        card.digit = digit;
+        [arr addObject:card];
+    }
+
+    return arr;
+}
+
 @end

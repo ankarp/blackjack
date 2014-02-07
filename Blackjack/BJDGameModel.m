@@ -34,7 +34,7 @@
 
 -(void) resetGame
 {
-    self.cards = [NSMutableArray array];
+    self.cards = [BJDCard generateAPackOfCards];
     
     self.playerCards = [NSMutableArray array];
     self.dealerCards = [NSMutableArray array];
@@ -219,6 +219,5 @@
     }
     return highestScore;
 }
-
 
 @end
