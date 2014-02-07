@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
     <dependencies>
         <deployment defaultVersion="1536" identifier="iOS"/>
-        <development version="4600" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -11,7 +10,7 @@
             <objects>
                 <viewController id="2" customClass="BJViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Dealer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="958-Qe-oNK">
@@ -21,64 +20,54 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Player" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="63u-fD-fem">
-                                <rect key="frame" x="134" y="251" width="52" height="21"/>
+                                <rect key="frame" x="134" y="260" width="52" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="card-back.png" id="KkS-4E-4GC">
-                                <rect key="frame" x="11" y="40" width="118" height="166"/>
+                                <rect key="frame" x="11" y="42" width="118" height="166"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="card-back.png" id="ngS-qI-FGZ">
-                                <rect key="frame" x="56" y="40" width="118" height="166"/>
+                                <rect key="frame" x="56" y="42" width="118" height="166"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="card-back.png" id="jpA-Pp-3GL">
-                                <rect key="frame" x="101" y="40" width="118" height="166"/>
+                                <rect key="frame" x="101" y="42" width="118" height="166"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="card-back.png" id="z48-ZN-Z6z">
-                                <rect key="frame" x="144" y="40" width="118" height="166"/>
+                                <rect key="frame" x="144" y="42" width="118" height="166"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="card-back.png" id="TgJ-cl-oew">
-                                <rect key="frame" x="188" y="40" width="118" height="166"/>
+                                <rect key="frame" x="188" y="42" width="118" height="166"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="card-back.png" id="DQR-Ze-S7C">
-                                <rect key="frame" x="11" y="312" width="118" height="166"/>
+                                <rect key="frame" x="11" y="328" width="118" height="166"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="card-back.png" id="apj-pA-Qdy">
-                                <rect key="frame" x="56" y="312" width="118" height="166"/>
+                                <rect key="frame" x="56" y="328" width="118" height="166"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="card-back.png" id="033-CG-3h0">
-                                <rect key="frame" x="95" y="312" width="118" height="166"/>
+                                <rect key="frame" x="95" y="328" width="118" height="166"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="card-back.png" id="fB8-2Y-bhw">
-                                <rect key="frame" x="137" y="312" width="118" height="166"/>
+                                <rect key="frame" x="137" y="328" width="118" height="166"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="card-back.png" id="Bp5-0W-13U">
-                                <rect key="frame" x="188" y="312" width="118" height="166"/>
+                                <rect key="frame" x="188" y="328" width="118" height="166"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8xV-rw-jjF">
-                                <rect key="frame" x="42" y="493" width="100" height="44"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <rect key="frame" x="42" y="512" width="100" height="44"/>
                                 <state key="normal" title="Stand">
-                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="didTapStandButton:" destination="2" eventType="touchUpInside" id="jBX-ib-hX8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hSH-gN-s8k">
-                                <rect key="frame" x="182" y="493" width="99" height="44"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <rect key="frame" x="182" y="512" width="99" height="44"/>
                                 <state key="normal" title="Hit">
-                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="didTapHitButton:" destination="2" eventType="touchUpInside" id="bU9-Yq-9uX"/>
@@ -88,7 +77,7 @@
                         <color key="backgroundColor" red="0.22352941176470587" green="0.61176470588235299" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
-                        <outlet property="dealerCard1" destination="3" id="PAG-Yq-qp0"/>
+                        <outlet property="dealerCard1" destination="KkS-4E-4GC" id="yuZ-dG-ekb"/>
                         <outlet property="dealerCard2" destination="ngS-qI-FGZ" id="67W-2K-2zN"/>
                         <outlet property="dealerCard3" destination="jpA-Pp-3GL" id="SLp-pa-70x"/>
                         <outlet property="dealerCard4" destination="z48-ZN-Z6z" id="awz-6P-eJ0"/>
@@ -104,33 +93,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="39" y="-151"/>
+            <point key="canvasLocation" x="-251" y="-138"/>
         </scene>
     </scenes>
     <resources>
         <image name="card-back.png" width="118" height="176"/>
     </resources>
-    <classes>
-        <class className="BJViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BJViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="didTapHitButton:"/>
-                <relationship kind="action" name="didTapStandButton:"/>
-                <relationship kind="outlet" name="dealerCard1" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="dealerCard2" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="dealerCard3" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="dealerCard4" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="dealerCard5" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="hitButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="playerCard1" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="playerCard2" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="playerCard3" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="playerCard4" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="playerCard5" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="standButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

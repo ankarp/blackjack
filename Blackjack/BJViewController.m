@@ -7,11 +7,14 @@
 //
 
 #import "BJViewController.h"
+#import "BJDGameModel.h"
+#import "BJDCard.h"
 
 @interface BJViewController ()
 
 @property (nonatomic, strong) NSArray* dealerCardViews;
 @property (nonatomic, strong) NSArray* playerCardViews;
+@property (nonatomic, strong) BJDGameModel *gameModel;
 
 @end
 
@@ -47,10 +50,26 @@
     self.playerCardViews = nil;
 }
 
+-(void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self restartGame];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(id) initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        self.gameModel = [[BJDGameModel alloc] init];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleNotificationGameDidEnd) name:BJNotificationGameDidEnd object:self.gameModel];
+    }
+    return self;
 }
 
 - (IBAction)didTapStandButton:(id)sender {
@@ -62,6 +81,57 @@
 - (NSUInteger) supportedInterfaceOrientations
 {
     return UIInterfaceOrientationMaskPortrait;
+}
+
+- (void) renderCards
+{
+    int maxCard = self.gameModel.maxPlayerCards;
+
+    BJDCard *dealerCard;
+    BJDCard *playerCard;
+    UIImageView *dealerCardView;
+    UIImageView *playerCardView;
+
+    for (int i = 0; i < maxCard; i++) { // maxCard
+        dealerCardView = self.dealerCardViews[i];
+        playerCardView = self.playerCardViews[i];
+
+        dealerCard = [self.gameModel dealerCardAtIndex:i];
+        playerCard = [self.gameModel playerCardAtIndex:i];
+
+        dealerCardView.hidden = (dealerCard == nil);
+        if (dealerCard && dealerCard.isFaceUp) {
+            dealerCardView.image = [dealerCard getCardImage];
+        } else {
+            dealerCardView.image = [UIImage imageNamed:@"card-back.png"];
+        }
+
+        playerCardView.hidden = (playerCard == nil);
+        if (playerCard && playerCard.isFaceUp) {
+            playerCardView.image = [playerCard getCardImage];
+        } else {
+            playerCardView.image = [UIImage imageNamed:@"card-back.png"];
+        }
+    }
+}
+- (void) restartGame
+{
+    [self.gameModel resetGame];
+    BJDCard *card;
+
+    card = [self.gameModel nextPlayerCard];
+    card.isFaceUp = YES;
+    card = [self.gameModel nextDealerCard];
+    card.isFaceUp = YES;
+
+    card = [self.gameModel nextPlayerCard];
+    card.isFaceUp = YES;
+
+    [self.gameModel nextDealerCard];
+
+    [self renderCards];
+
+    self.standButton.enabled = self.hitButton.enabled = YES;
 }
 
 @end

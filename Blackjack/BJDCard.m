@@ -54,10 +54,12 @@
     int suit, digit;
 
     for (suit = 0; suit < 4; suit++) {
-        card = [[BJDCard alloc] init];
-        card.suit = suit;
-        card.digit = digit;
-        [arr addObject:card];
+        for (digit = 1; digit <= 13; digit++) {
+            card = [[BJDCard alloc] init];
+            card.suit = suit;
+            card.digit = digit;
+            [arr addObject:card];
+        }
     }
 
     return arr;
