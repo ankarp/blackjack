@@ -8,6 +8,7 @@
 
 #import "BJDGameModel.h"
 #import "BJDCard.h"
+#import "NSMutableArray+Shuffle.h"
 
 @interface BJDGameModel ()
 
@@ -35,6 +36,7 @@
 -(void) resetGame
 {
     self.cards = [BJDCard generateAPackOfCards];
+    [self.cards shuffle];
     
     self.playerCards = [NSMutableArray array];
     self.dealerCards = [NSMutableArray array];

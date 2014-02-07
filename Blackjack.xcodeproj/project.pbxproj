@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		39847D7718A459D400C614B1 /* BJDCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 39847D7618A459D400C614B1 /* BJDCard.m */; };
+		39847D7A18A45D1600C614B1 /* NSMutableArray+Shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = 39847D7918A45D1600C614B1 /* NSMutableArray+Shuffle.m */; };
 		39C3349218A4216C00A66B3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C3349118A4216C00A66B3A /* UIKit.framework */; };
 		39C3349418A4216C00A66B3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C3349318A4216C00A66B3A /* Foundation.framework */; };
 		39C3349618A4216C00A66B3A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C3349518A4216C00A66B3A /* CoreGraphics.framework */; };
@@ -134,6 +135,8 @@
 /* Begin PBXFileReference section */
 		39847D7518A459C700C614B1 /* BJDCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJDCard.h; sourceTree = "<group>"; };
 		39847D7618A459D400C614B1 /* BJDCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJDCard.m; sourceTree = "<group>"; };
+		39847D7818A45D1600C614B1 /* NSMutableArray+Shuffle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Shuffle.h"; sourceTree = "<group>"; };
+		39847D7918A45D1600C614B1 /* NSMutableArray+Shuffle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Shuffle.m"; sourceTree = "<group>"; };
 		39C3348D18A4216C00A66B3A /* Blackjack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blackjack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39C3349118A4216C00A66B3A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		39C3349318A4216C00A66B3A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -308,6 +311,8 @@
 			isa = PBXGroup;
 			children = (
 				39847D7618A459D400C614B1 /* BJDCard.m */,
+				39847D7818A45D1600C614B1 /* NSMutableArray+Shuffle.h */,
+				39847D7918A45D1600C614B1 /* NSMutableArray+Shuffle.m */,
 				39847D7518A459C700C614B1 /* BJDCard.h */,
 				39C3359518A4540B00A66B3A /* BJDGameModel.m */,
 				39C3359418A453FE00A66B3A /* BJDGameModel.h */,
@@ -649,6 +654,7 @@
 				39C334AE18A4216C00A66B3A /* BJViewController.m in Sources */,
 				39C3359618A4540B00A66B3A /* BJDGameModel.m in Sources */,
 				39847D7718A459D400C614B1 /* BJDCard.m in Sources */,
+				39847D7A18A45D1600C614B1 /* NSMutableArray+Shuffle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
