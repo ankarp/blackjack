@@ -59,7 +59,7 @@
 - (IBAction)didTapHitButton:(id)sender {
 }
 
-- (NSInteger) supportedInterfaceOrientations
+- (NSUInteger) supportedInterfaceOrientations
 {
     return UIInterfaceOrientationMaskPortrait;
 }
