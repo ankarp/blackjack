@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39847D7718A459D400C614B1 /* BJDCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 39847D7618A459D400C614B1 /* BJDCard.m */; };
 		39C3349218A4216C00A66B3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C3349118A4216C00A66B3A /* UIKit.framework */; };
 		39C3349418A4216C00A66B3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C3349318A4216C00A66B3A /* Foundation.framework */; };
 		39C3349618A4216C00A66B3A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C3349518A4216C00A66B3A /* CoreGraphics.framework */; };
@@ -127,11 +128,12 @@
 		39C3358E18A4369000A66B3A /* spade-8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C3352118A4369000A66B3A /* spade-8@2x.png */; };
 		39C3358F18A4369000A66B3A /* spade-9.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C3352218A4369000A66B3A /* spade-9.png */; };
 		39C3359018A4369000A66B3A /* spade-9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C3352318A4369000A66B3A /* spade-9@2x.png */; };
-		39C3359318A44C6300A66B3A /* BJDcard.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C3359218A44C6300A66B3A /* BJDcard.m */; };
 		39C3359618A4540B00A66B3A /* BJDGameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C3359518A4540B00A66B3A /* BJDGameModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39847D7518A459C700C614B1 /* BJDCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJDCard.h; sourceTree = "<group>"; };
+		39847D7618A459D400C614B1 /* BJDCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJDCard.m; sourceTree = "<group>"; };
 		39C3348D18A4216C00A66B3A /* Blackjack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blackjack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39C3349118A4216C00A66B3A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		39C3349318A4216C00A66B3A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -257,8 +259,6 @@
 		39C3352118A4369000A66B3A /* spade-8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spade-8@2x.png"; sourceTree = "<group>"; };
 		39C3352218A4369000A66B3A /* spade-9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spade-9.png"; sourceTree = "<group>"; };
 		39C3352318A4369000A66B3A /* spade-9@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spade-9@2x.png"; sourceTree = "<group>"; };
-		39C3359118A44C6300A66B3A /* BJDcard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJDcard.h; sourceTree = "<group>"; };
-		39C3359218A44C6300A66B3A /* BJDcard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJDcard.m; sourceTree = "<group>"; };
 		39C3359418A453FE00A66B3A /* BJDGameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJDGameModel.h; sourceTree = "<group>"; };
 		39C3359518A4540B00A66B3A /* BJDGameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJDGameModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -307,8 +307,8 @@
 		39C3349718A4216C00A66B3A /* Blackjack */ = {
 			isa = PBXGroup;
 			children = (
-				39C3359218A44C6300A66B3A /* BJDcard.m */,
-				39C3359118A44C6300A66B3A /* BJDcard.h */,
+				39847D7618A459D400C614B1 /* BJDCard.m */,
+				39847D7518A459C700C614B1 /* BJDCard.h */,
 				39C3359518A4540B00A66B3A /* BJDGameModel.m */,
 				39C3359418A453FE00A66B3A /* BJDGameModel.h */,
 				39C334A018A4216C00A66B3A /* BJAppDelegate.h */,
@@ -647,8 +647,8 @@
 				39C3349E18A4216C00A66B3A /* main.m in Sources */,
 				39C334A218A4216C00A66B3A /* BJAppDelegate.m in Sources */,
 				39C334AE18A4216C00A66B3A /* BJViewController.m in Sources */,
-				39C3359318A44C6300A66B3A /* BJDcard.m in Sources */,
 				39C3359618A4540B00A66B3A /* BJDGameModel.m in Sources */,
+				39847D7718A459D400C614B1 /* BJDCard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
