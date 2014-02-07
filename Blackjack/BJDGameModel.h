@@ -6,6 +6,8 @@
 //  Copyright (c) 2012 Nick Kuh. All rights reserved.
 //
 
+#define BJNotificationGameDidEnd @"BJNotificationGameDidEnd"
+
 typedef enum : int
 {
     BJGameStagePlayer,

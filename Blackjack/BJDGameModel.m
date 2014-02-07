@@ -155,7 +155,10 @@
 //dispatches an NSNotification via the NSNotificationCenter (and view controllers listening for this notification will receive and handle the notification
 -(void) notifyGameDidEnd
 {
-
+    NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
+    NSNumber *didDealerWin = @(self.didDealerWin);
+    NSDictionary *dict = @{@"didDealerWin" : didDealerWin};
+    [notificationCenter postNotificationName:BJNotificationGameDidEnd object:self userInfo:dict];
 }
 
 #pragma mark - Utility Black Jack Hand Logic
