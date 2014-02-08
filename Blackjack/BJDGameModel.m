@@ -158,6 +158,7 @@
     NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
     NSNumber *didDealerWin = @(self.didDealerWin);
     NSDictionary *dict = @{@"didDealerWin" : didDealerWin};
+    NSLog(@"Sending BJNotificationGameDidEnd");
     [notificationCenter postNotificationName:BJNotificationGameDidEnd object:self userInfo:dict];
 }
 

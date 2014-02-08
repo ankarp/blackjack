@@ -73,9 +73,19 @@
 }
 
 - (IBAction)didTapStandButton:(id)sender {
+    self.gameModel.gameStage = BJGameStageDealer;
+    [self playDealerTurn];
 }
 
 - (IBAction)didTapHitButton:(id)sender {
+    BJDCard *card = [self.gameModel nextPlayerCard];
+    card.isFaceUp = YES;
+    [self renderCards];
+
+    [self.gameModel updateGameStage];
+    if (self.gameModel.gameStage == BJGameStageDealer) {
+        [self playDealerTurn];
+    }
 }
 
 - (NSUInteger) supportedInterfaceOrientations
@@ -132,6 +142,49 @@
     [self renderCards];
 
     self.standButton.enabled = self.hitButton.enabled = YES;
+}
+
+#pragma mark - Automated Dealer Play
+
+- (void) showSecondDealerCard
+{
+    BJDCard *card = [self.gameModel lastDealerCard];
+    card.isFaceUp = YES;
+    [self renderCards];
+    [self.gameModel updateGameStage];
+    if (self.gameModel.gameStage != BJGameStageGameOver) {
+        [self performSelector:@selector(showNextDealerCard) withObject:nil afterDelay:0.8];
+    }
+}
+
+- (void) showNextDealerCard
+{
+    // next card
+    BJDCard *card = [self.gameModel nextDealerCard];
+    card.isFaceUp = YES;
+    [self renderCards];
+    [self.gameModel updateGameStage];
+    if (self.gameModel.gameStage != BJGameStageGameOver) {
+        [self performSelector:@selector(showNextDealerCard) withObject:nil afterDelay:0.8];
+    }
+}
+
+- (void) playDealerTurn
+{
+    self.standButton.enabled = self.hitButton.enabled = NO;
+    [self performSelector:@selector(showSecondDealerCard) withObject:nil afterDelay:0.8];
+}
+
+#pragma mark - NotificationCenter Notifications
+
+-(void) handleNotificationGameDidEnd:(NSNotification *)notification
+{
+    NSLog(@"in handleNotificationGameDidEnd");
+    NSDictionary *userInfo = notification.userInfo;
+    NSNumber *num = userInfo[@"didDealerWin"];
+    NSString *message = [num boolValue] ? @"Dealer won!" : @"You won!";
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Game Over" message:message delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Play Again", nil];
+    [alert show];
 }
 
 @end
