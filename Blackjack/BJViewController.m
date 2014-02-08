@@ -67,7 +67,7 @@
     self = [super initWithCoder:aDecoder];
     if (self) {
         self.gameModel = [[BJDGameModel alloc] init];
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleNotificationGameDidEnd) name:BJNotificationGameDidEnd object:self.gameModel];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleNotificationGameDidEnd:) name:BJNotificationGameDidEnd object:self.gameModel];
     }
     return self;
 }
@@ -179,7 +179,6 @@
 
 -(void) handleNotificationGameDidEnd:(NSNotification *)notification
 {
-    NSLog(@"in handleNotificationGameDidEnd");
     NSDictionary *userInfo = notification.userInfo;
     NSNumber *num = userInfo[@"didDealerWin"];
     NSString *message = [num boolValue] ? @"Dealer won!" : @"You won!";
