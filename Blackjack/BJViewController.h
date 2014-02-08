@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BJViewController : UIViewController
+@interface BJViewController : UIViewController <UIAlertViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *dealerCard1;
 @property (weak, nonatomic) IBOutlet UIImageView *dealerCard2;

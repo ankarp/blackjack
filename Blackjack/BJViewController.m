@@ -182,8 +182,13 @@
     NSDictionary *userInfo = notification.userInfo;
     NSNumber *num = userInfo[@"didDealerWin"];
     NSString *message = [num boolValue] ? @"Dealer won!" : @"You won!";
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Game Over" message:message delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Play Again", nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Game Over" message:message delegate:self cancelButtonTitle:nil otherButtonTitles:@"Play Again", nil];
     [alert show];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    [self restartGame];
 }
 
 @end
